@@ -1,7 +1,5 @@
 from django.contrib import admin
-from blog.models import (
-            UserType, Company, Category, SubCategory, Blog, BloggerLogin, BlogSeo
-            )
+from blog.models import UserType, Company, Category, SubCategory, Blog, BloggerLogin, BlogSeo
 
 # Register your models here.
 
@@ -9,6 +7,7 @@ from blog.models import (
 class UserTypeAdmin(admin.ModelAdmin):
     pass
 
+# Instead of this, we can use a decorator.
 admin.site.register(UserType, UserTypeAdmin)
 
 

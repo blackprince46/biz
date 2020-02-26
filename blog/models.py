@@ -1,6 +1,9 @@
 from django.db import models
+from django.urls import reverse
 
 # Create your models here.
+
+
 class UserType(models.Model):
     """ This is for user:
         We will be able to classify the type of the user.
@@ -10,6 +13,7 @@ class UserType(models.Model):
     active = models.IntegerField(default=1)
     created_timestamp = models.DateTimeField(auto_now_add=True)
     updated_timestamp = models.DateTimeField(auto_now=True)
+
 
 class Company(models.Model):
     """
@@ -29,6 +33,7 @@ class Company(models.Model):
     created_timestamp = models.DateTimeField(auto_now_add=True)
     updated_timestamp = models.DateTimeField(auto_now=True)
 
+
 class BloggerLogin(models.Model):
     """
         This is for login and logout of the prospective user/blogger/or user as per type.
@@ -44,6 +49,7 @@ class BloggerLogin(models.Model):
     active=models.IntegerField(default=1)
     created_timestamp = models.DateTimeField(auto_now_add=True)
     updated_timestamp = models.DateTimeField(auto_now=True)
+
 
 class Category(models.Model):
     """
@@ -65,6 +71,7 @@ class SubCategory(models.Model):
     active = models.IntegerField(default=1)
     created_timestamp = models.DateTimeField(auto_now_add=True)
     updated_timestamp = models.DateTimeField(auto_now=True)
+
 
 class Blog(models.Model):
     """
