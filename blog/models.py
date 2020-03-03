@@ -8,8 +8,8 @@ class UserType(models.Model):
     """ This is for user:
         We will be able to classify the type of the user.
     """
-    type_name=models.CharField(max_length=250,null=False)
-    type_desc=models.TextField()
+    type_name = models.CharField(max_length=250,null=False)
+    type_desc = models.TextField()
     active = models.IntegerField(default=1)
     created_timestamp = models.DateTimeField(auto_now_add=True)
     updated_timestamp = models.DateTimeField(auto_now=True)
@@ -19,16 +19,16 @@ class Company(models.Model):
     """
         This is for the classification and registration and its information of the company.
     """
-    company_name=models.CharField(max_length=100)
-    company_owner=models.CharField(max_length=100)
-    company_domain=models.CharField(max_length=100)
+    company_name = models.CharField(max_length=100)
+    company_owner = models.CharField(max_length=100)
+    company_domain = models.CharField(max_length=100)
     company_website = models.URLField()
-    company_size= models.IntegerField()
-    company_headquarters= models.CharField(max_length=250)
-    company_type=models.CharField(max_length=100)
-    company_establishmentyear=models.IntegerField()
-    company_specialties=models.CharField(max_length=250)
-    company_locations=models.CharField(max_length=250)
+    company_size = models.IntegerField()
+    company_headquarters = models.CharField(max_length=250)
+    company_type = models.CharField(max_length=100)
+    company_establishmentyear = models.IntegerField()
+    company_specialties = models.CharField(max_length=250)
+    company_locations = models.CharField(max_length=250)
     active = models.IntegerField(default=1)
     created_timestamp = models.DateTimeField(auto_now_add=True)
     updated_timestamp = models.DateTimeField(auto_now=True)

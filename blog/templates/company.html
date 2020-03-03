@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous">
+</head>
+<body>
+
+
+
+
+<form class="form-horizontal" action="http://localhost:8000/blog/company/" method="post">
+{% csrf_token %}
+<fieldset>
+
+<!-- Form Name -->
+<legend>Company Registration Form</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Company_Name">Company_Name</label>
+  <div class="col-md-4">
+  <input id="company_name" name="company_name" type="text" placeholder="" class="form-control input-md">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="company_owner">Company_Owner</label>
+  <div class="col-md-4">
+  <input id="company_owner" name="company_owner" type="text" placeholder="" class="form-control input-md">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="company_domain">Comapny_Domain</label>
+  <div class="col-md-4">
+  <input id="company_domain" name="company_domain" type="text" placeholder="" class="form-control input-md">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="company_website">Company_Website</label>
+  <div class="col-md-4">
+  <input id="company_website" name="company_website" type="text" placeholder="" class="form-control input-md">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="company_size">Company_Size</label>
+  <div class="col-md-4">
+  <input id="company_size" name="company_size" type="text" placeholder="" class="form-control input-md">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="company_headquarters">Company_Headquarters</label>
+  <div class="col-md-4">
+  <input id="company_headquarters" name="company_headquarters" type="text" placeholder="" class="form-control input-md">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="company_type">Company_Type</label>
+  <div class="col-md-4">
+  <input id="company_type" name="company_type" type="text" placeholder="" class="form-control input-md">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="company_establishmentyear">Company_Establishment Year</label>
+  <div class="col-md-4">
+  <input id="company_establishmentyear" name="company_establishmentyear" type="text" placeholder="" class="form-control input-md">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="company_specialties">Company_Specialties</label>
+  <div class="col-md-4">
+  <input id="company_specialties" name="company_specialties" type="text" placeholder="" class="form-control input-md">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="company_locations">Company_Location</label>
+  <div class="col-md-4">
+  <input id="company_locations" name="company_locations" type="text" placeholder="" class="form-control input-md">
+
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Submit"></label>
+  <div class="col-md-4">
+    <button id="Submit" name="Submit" class="btn btn-primary">Submit</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</body>
+</html>
