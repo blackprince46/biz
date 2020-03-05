@@ -8,8 +8,8 @@ class SupportType(models.Model):
         The kind of support the customer gets, as there are some types defined for the support, and is
         provided to the customer.
     """
-    type_name=models.CharField(max_length=100)
-    type_desc=models.CharField(max_length=300)
+    type_name = models.CharField(max_length=100)
+    type_desc = models.CharField(max_length=300)
     active = models.IntegerField(default=1)
     created_timestamp = models.DateTimeField(auto_now_add=True)
     updated_timestamp = models.DateTimeField(auto_now=True)

@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from . models import Company
 from blog.models import UserType,Company
+from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.
 
@@ -10,9 +11,10 @@ def index(request):
 def retrieveusertype(request):
     user_type = UserType.objects.all()
 
+@csrf_exempt
 def company_info(request):
     if request.method =='POST':
-        print(request.POST)
+        # print(request.POST)
         comp = Company(company_name = request.POST['company_name'],
                        company_owner = request.POST['company_owner'],
                        company_domain = request.POST['company_domain'],
